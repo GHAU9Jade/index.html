@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Forms and Navbar</title>
+    <style>
+            body {
+                text-align: center;
+                background-color: rgb(34, 63, 106);
+            }
+           
+            h1 {
+                background-color: #1c1c1c;
+                color: white;
+                padding: 15px;
+                border-radius: 15px;
+                }
+            .container {
+                background-color: white;
+                width: 500px;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            form {
+                text-align: left;
+            }
+            input[type="text"], textarea {
+                width: 95%;
+                padding: 8px;
+                margin: 5px 0 15px 0;
+            }
+
+            input[type="submit"] {
+                background-color: #2b2b2b;
+                color: white;
+                padding: 10px;
+                width: 100%;
+                border: none;
+            }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffsm2n4xf-Ake_7FjbIElN4zOydP5HGxF899j-8bZJQ&s=10" width="120" height="120"><br><br>
+    <form>
+      <label>Name</label><br>
+      <input type="text" placeholder="Enter your username"><br>
+      <label>Password</label><br>
+        <input type="text" placeholder="Enter your password"><br>
+                <label>Contact us</label><br>
+                <input type="text" id="Contact us" placeholder="Enter Email"><br>
+
+                <h2>Select your campus</h2>
+                <input type="checkbox" name="genre" value="Greenhills">
+                <label for="#">Greenhills </label>
+                <input type="checkbox" name="genre" value="Fairview">
+                <label for="#">Fairview </label>
+                <input type="checkbox" name="genre" value="Las Piñas">
+                <label for="#">Las Piñas</label>
+                <input type="checkbox" name="genre" value="Sta. Ana Campus">
+                <label for="#">Sta. Ana Campus</label>
+                <input type="checkbox" name="genre" value="Angeles">
+                <label for="#">Angeles</label><br><br>
+
+                <label>Write your email:</label><br>
+                <textarea rows="5" cols="45" placeholder="Write your email"></textarea><br>
+                <input type="submit" value="Submit email">
+            </form>
+</div>
+    </div>
+  </div>
+</div>
+</body> 
+</html>
